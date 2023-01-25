@@ -1,0 +1,5 @@
+<button *ngIf="!(isLoggedIn | async)" (click)="login()">Login</button>
+<button *ngIf="isLoggedIn | async" (click)="logout()">Logout</button>
+<br>
+<br>
+<a routerLink="/home">Go to Home</a>
